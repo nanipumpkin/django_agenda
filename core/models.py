@@ -14,3 +14,6 @@ class Evento(models.Model):
     
     def __str__(self):
         return self.titulo
+
+    def data_ajustada (self):
+        return self.data.strftime('%d/%m/%Y %H:%M hrs')
