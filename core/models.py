@@ -17,3 +17,6 @@ class Evento(models.Model):
 
     def data_ajustada (self):
         return self.data.strftime('%d/%m/%Y %H:%M hrs')
+    
+    def get_data_input(self):
+        return self.data.strftime('%Y-%m-%dT%H:%M')
